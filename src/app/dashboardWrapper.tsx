@@ -11,6 +11,8 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     (state) => state.global.isSideBarCollapsed
   );
 
+  console.log("isDarkMode", isDarkMode);
+
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add("dark");
